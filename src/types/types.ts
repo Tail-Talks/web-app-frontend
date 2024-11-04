@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { AnchorHTMLAttributes, DetailedHTMLProps, ReactNode } from "react";
 
 export type PropWithChildren = {
   children: ReactNode;
@@ -15,30 +15,27 @@ export type UserRoutes = {
 
 export type Button = {
   accesskey?: string;
-  autofocus?: string;
-  disabled?: string;
+  autofocus?: boolean;
+  disabled?: boolean;
   form?: string;
   formaction?: string;
   formenctype?: string;
   formmethod?: string;
-  formnovalidate?: string;
+  formnovalidate?: boolean;
   formtarget?: string;
   name?: string;
-  type?: string;
+  type?: "button" | "submit" | "reset";
   value?: string;
 };
 
 export type LinkBtn = {
   accesskey?: string;
-  coords?: string;
   download?: string;
   href?: string;
   hreflang?: string;
-  name?: string;
   rel?: string;
   rev?: string;
-  shape?: string;
-  tabindex?: string;
+  tabindex?: number;
   target?: string;
   title?: string;
   type?: string;
@@ -46,5 +43,7 @@ export type LinkBtn = {
 
 export type CustomBtn = {
   tag: string;
-  attr: LinkBtn | Button | any;
+  value: string;
+  attrBtn?: Button;
+  attrLink?: LinkBtn;
 };
