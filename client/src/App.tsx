@@ -1,7 +1,7 @@
 
 import './App.css'
-import Footer from './Components/Footer/Footer'
-import Header from './Components/Header/Header'
+// import Footer from './Components/Footer/Footer'
+// import Header from './Components/Header/Header'
 // import LoginUserForm from './Components/LoginUserForm/LoginUserForm'
 // import ProfileDescriptionForm from './Components/ProfileDescriptionForm/ProfileDescriptionForm'
 // import UserName from './Components/UserName/UserName'
@@ -10,9 +10,9 @@ function App() {
 
   return (
     <>
-     <Header/>
+     {/* <Header/> */}
     <LoginPage/>
-    <Footer/>
+    {/* <Footer/> */}
     {/* <UserName/>
     <ProfileDescriptionForm/>
     <LoginUserForm/> */}
