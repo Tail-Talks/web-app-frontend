@@ -1,0 +1,35 @@
+.footerList {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 1096px;
+  height: 17px;
+}
+.footerListLi {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin-bottom: 10px;
+}
+.footerListLi a {
+  text-decoration: none;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.59px;
+  text-align: left;
+  transition: color 0.3s ease;
+  color: black;
+}
+.footerInfo {
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+  padding-top: 10px;
+}
+.footerInfoText {
+  margin: 10px;
+}
