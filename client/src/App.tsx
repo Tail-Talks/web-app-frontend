@@ -7,6 +7,7 @@ import './App.css';
 // import ProfileDescriptionForm from './Components/ProfileDescriptionForm/ProfileDescriptionForm'
 // import UserName from './Components/UserName/UserName'
 import LoginPage from './Pages/LoginPage/LoginPage';
+import InfoAccount from './Pages/InfoPage/InfoAccount';
 // import PersonalAccount from './Pages/PersonalAccount/PersonalAccount';
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
     <ProfileDescriptionForm/>
     <LoginUserForm/> */}
       {/* <PersonalAccount /> */}
+      <InfoAccount/>
     </>
   );
 }

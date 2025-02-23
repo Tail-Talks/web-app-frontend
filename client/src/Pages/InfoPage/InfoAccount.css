@@ -1,0 +1,52 @@
+.list {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    list-style: none;
+  }
+  
+.list-detailsNavList{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.list-detailsNavList-item {
+    width: 100%;
+    margin-bottom: 15px;
+    opacity: 1;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .list-detailsNavList-item:hover {
+    opacity: 0.7;
+  }
+  
+  .list-detailsNavList-item-text {
+    font-family: Rubik;
+    font-size: 16px;
+    line-height: 28px;
+    color: black;
+    margin-right: auto;
+  }
+  
+  .list-detailsNavList-item-arrow {
+    align-self: center;
+  }
+  
+  .list-detailsNavList-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .list-detailsNavList-item-btn {
+    display: flex;
+    width: 100%;
+    padding: 11px 20px;
+    justify-content: start;
+    align-items: start;
+    border: 1px solid #949494;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+    
