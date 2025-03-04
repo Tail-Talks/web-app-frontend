@@ -1,0 +1,11 @@
+.loginPageLeftSide img {
+  width: 457px;
+  height: 513px;
+}
+.loginPageBox {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 87px;
+  margin-top: 52px;
+  align-items: center;
+}
