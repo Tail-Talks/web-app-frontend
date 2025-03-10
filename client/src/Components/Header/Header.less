@@ -1,0 +1,59 @@
+@import "../../../src/styles/vars.less";
+
+.headerBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerLogo {
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  height: 68px;
+  text-align: left;
+}
+.headerLogoImg {
+  width: 189px;
+  height: 38px;
+  margin-bottom: 14px;
+}
+.headerMotto {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18.96px;
+}
+
+.headerWalletButton {
+  width: 300px;
+  height: 44px;
+  border: solid 2px;
+  border-image-source: @gradient;
+  border-image-slice: 1;
+  background: @gradient;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Comfortaa;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+}
+
+.headerBoxRight {
+  display: flex;
+  width: 377px;
+  height: 44px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.headerLanguage select {
+  width: 57px;
+  height: 28px;
+  font-family: Comfortaa;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+}
