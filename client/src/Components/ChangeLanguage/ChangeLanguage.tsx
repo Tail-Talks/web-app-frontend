@@ -5,12 +5,12 @@ import './ChangeLanguage.less';
 const ChangeLanguage = () => {
   const options = [
     { value: 'Русский', fullLabel: <div className="optionLabel"><img src="../../../public/logo/emojione_flag-for-russia.svg" alt="Русский" className="optionImg" />Русский</div>, shortLabel: 'Rus' },
-    { value: 'English', fullLabel: <div className="optionLabel"><img src="../../../public/logo/emojione_flag-for-united-states.svg" alt="English" className="optionImg" />English</div>, shortLabel: 'Eng' },
-    { value: '中國人', fullLabel: <div className="optionLabel"><img src="../../../public/logo/emojione_flag-for-china.svg" alt="中國人" className="optionImg" />中國人</div>, shortLabel: '中國人' },
+    { value: 'English', fullLabel: <div className="optionLabel"><img src="../../../public/logo/emojione_flag-for-united-states.svg" alt="English" className="optionImg" />English</div>, shortLabel: 'Eng'},
+    { value: '中國人', fullLabel: <div className="optionLabel"><img src="../../../public/logo/emojione_flag-for-china.svg" alt="中國人" className="optionImg" />中國人</div>, shortLabel: '中國人'},
     { value: 'Deutsch', fullLabel: <div className="optionLabel"><img src="../../../public/logo/emojione_flag-for-germany.svg" alt="Deutsch" className="optionImg" />Deutsch</div>, shortLabel: 'Deu' },
-    { value: 'Françai', fullLabel: <div className="optionLabel"><img src="../../../public/logo/emojione_flag-for-france.svg" alt="Françai" className="optionImg" />Françai</div>, shortLabel: 'Fra' },
-    { value: 'Español', fullLabel: <div className="optionLabel"><img src="../../../public/logo/emojione_flag-for-spain.svg" alt="Españол" className="optionImg" />Españол</div>, shortLabel: 'Spa' },
-    { value: 'қазақ', fullLabel: <div className="optionLabel"><img src="../../../public/logo/emojione_flag-for-kazakhstan.svg" alt="қазақ" className="optionImg" />қазақ</div>, shortLabel: 'Kaz' }
+    { value: 'Françai', fullLabel: <div className="optionLabel"><img src="../../../public/logo/emojione_flag-for-france.svg" alt="Françai" className="optionImg" />Françai</div>, shortLabel: 'Fra'},
+    { value: 'Español', fullLabel: <div className="optionLabel"><img src="../../../public/logo/emojione_flag-for-spain.svg" alt="Españол" className="optionImg" />Españол</div>, shortLabel: 'Spa'},
+    { value: 'қазақ', fullLabel: <div className="optionLabel"><img src="../../../public/logo/emojione_flag-for-kazakhstan.svg" alt="қазақ" className="optionImg" />қазақ</div>, shortLabel: 'Kaz'}
   ];
 
   const [selectedOption, setSelectedOption] = useState(options[0]);
@@ -25,7 +25,18 @@ const ChangeLanguage = () => {
       ...provided,
       border: 'none',
       boxShadow: 'none',
+      padding:'0'
     }),
+    menu:(provided) => ({
+      ...provided,
+      minWidth: '148px',
+      borderRadius:'20px',
+      overflow:'hidden'
+    }),
+    indicator:(provided) => ({
+      ...provided,
+      padding:0,
+    })
   };
 
   return (
@@ -35,8 +46,11 @@ const ChangeLanguage = () => {
         onChange={handleChange}
         options={options}
         styles={customStyles}
+        className='selector-container'
+        classNamePrefix='selector'
         formatOptionLabel={(option, { context }) => (
           context === 'menu' ? option.fullLabel : option.shortLabel
+          
         )}
        
       />
