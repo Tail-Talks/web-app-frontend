@@ -2,10 +2,22 @@
     box-sizing:border-box
 }
 .changeLanguageContainer {
-    width: 100px;
     font-size: 14px;
+    font-family: 'Comfortaa','Rubik';
+    position: relative;
+    display: flex;
+
+    width:57px;
+    gap:4px;
+    .selector__indicator{
+      padding:0
+    }
+    .selector__value-container{
+      padding:0;
+    }
+
   }
-  
+
   .optionImg {
     width: 20px;
     margin-right: 8px;
@@ -14,14 +26,19 @@
   .optionLabel{
     display: flex;
     align-items: center;
-    font-family: Rubik;
+    font-family: 'Comfortaa','Rubik';
     font-size: 14px;
     font-weight: 400;
     line-height: 16.59px;
     text-align: left;
-
+    
+  }
+  .selector__menu{
+    width:500px;
   }
 
   .changeLanguageContainer span{
     display: none;
   }
+
+
