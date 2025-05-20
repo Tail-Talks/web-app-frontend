@@ -7,24 +7,28 @@ export default function LoginPage() {
   return (
   <div className="pageWrapper">
     <header className="headerBox">
-      <div className="headerBoxLeft">
-        <div className="headerLogo">
-          <img
-            className="headerLogoImg"
-            src="../../../public/logo/logoGroupHeader.svg"
-            alt=""
-          />
-          <p className="headerMotto">
-            Здесь каждый питомец достоин стать звездой
-          </p>
-        </div>
-      </div>
-      <div className="headerBoxRight">
-        <div className="headerWallet">
-          <button className="headerWalletButton">Подключить кошелек</button>
-        </div>
-        <div className="headerLanguage">
-        <ChangeLanguage/>
+      <div className="wrapper">
+        <div className="headerContent">
+          <div className="headerBoxLeft">
+            <div className="headerLogo">
+              <img
+                className="headerLogoImg"
+                src="../../../public/logo/logoGroupHeader.svg"
+                alt=""
+              />
+              <p className="headerMotto">
+                Здесь каждый питомец достоин стать звездой
+              </p>
+            </div>
+          </div>
+          <div className="headerBoxRight">
+            <div className="headerWallet">
+              <button className="headerWalletButton">Подключить кошелек</button>
+            </div>
+            <div className="headerLanguage">
+            <ChangeLanguage/>
+            </div>
+          </div>
         </div>
       </div>
     </header>
