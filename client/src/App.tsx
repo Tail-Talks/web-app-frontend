@@ -1,13 +1,11 @@
-import React from 'react';
 
-import './App.css';
+import './App.css'
 // import Footer from './Components/Footer/Footer'
 // import Header from './Components/Header/Header'
 // import LoginUserForm from './Components/LoginUserForm/LoginUserForm'
 // import ProfileDescriptionForm from './Components/ProfileDescriptionForm/ProfileDescriptionForm'
 // import UserName from './Components/UserName/UserName'
-import LoginPage from './Pages/LoginPage/LoginPage';
-// import PersonalAccount from './Pages/PersonalAccount/PersonalAccount';
+import LoginPage from './Pages/LoginPage/LoginPage'
 function App() {
   return (
     <>
@@ -17,7 +15,6 @@ function App() {
       {/* <UserName/>
     <ProfileDescriptionForm/>
     <LoginUserForm/> */}
-      {/* <PersonalAccount /> */}
     </>
   );
 }
