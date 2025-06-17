@@ -1,5 +1,6 @@
 
 import './App.css'
+import PersonalProfile from './Components/PersonalProfile/PersonalProfile';
 // import Footer from './Components/Footer/Footer'
 // import Header from './Components/Header/Header'
 // import LoginUserForm from './Components/LoginUserForm/LoginUserForm'
@@ -15,6 +16,7 @@ function App() {
       {/* <UserName/>
     <ProfileDescriptionForm/>
     <LoginUserForm/> */}
+    <PersonalProfile />
     </>
   );
 }
